@@ -1,0 +1,963 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	margin:0px;
+	padding: 0px;
+	background-color: teal;
+	background-image: url("cables_3_desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment:fixed;
+	font-family: arial;
+	width: 100vw;
+		}
+
+
+.patternbox {
+	background-image: url("pattern.svg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: 0px 0px;
+	animation: animatedBackground 2s linear infinite;
+}
+
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 100%; }
+}
+
+
+
+
+
+/* header desplegable */
+
+
+.overlay {
+display: flex;
+	flex-wrap: wrap;
+	margin: auto;
+	align-content: space-between;
+  height: 0%;
+  width: 50vw;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  background-color: #ffc20e;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 30vh;
+  width: 100%;
+	height: 100vh;
+	text-align: justify;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1em;
+	line-height: 1.5;
+	font-family: Helvetica;
+	font-weight: bolder;
+}
+
+
+.overlay-content h1 {
+	font-size: 3em;
+	color: teal;
+	display: block;
+	float: left;
+	position:absolute;
+	top: 0;
+}
+
+
+.overlay-content .about {
+	font-size: 0.9em;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	color: teal;
+}
+
+
+.overlay a {
+  padding: 25px 0 0 0;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 7px;
+  font-size: 60px;
+	color: teal;
+}
+
+.overlay-content a strong {
+	color:teal;
+}
+
+.overlay-content img {
+	display: block;
+	
+}
+
+/* fin header desplegable */
+
+
+
+.logo-nav-container {
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header {
+
+	position: fixed;
+	z-index: 1;
+    top: 0;
+	background: rgba(0, 128, 128, 1);
+}
+
+.header a{
+	
+	text-decoration: none;
+	color: white;
+}
+
+.top {
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	height: 100%;
+    overflow: auto;
+    width: 50vw;
+	margin-top: 1vh;
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.top a div {
+	font-size: 0.7em;
+	font-family: helvetica;
+	letter-spacing: 2px;
+	color: #ffc20e;
+}
+
+
+
+
+.bot {
+	padding: 0.5rem 1rem;
+	display: block;
+	padding-top: 0;
+	z-index: 1;
+	
+}
+
+.logo {
+	padding-bottom: 7px;
+	letter-spacing: 0;
+	display: block;
+	font-weight: lighter;
+	padding-left: 5rem;
+	z-index: 1;
+	
+}
+
+.logo-icon svg{
+	display: block;
+	background-repeat: no-repeat;
+}
+
+h2 {
+	color: teal;
+	
+}
+
+
+
+h3 {
+	color: #ffffff;
+	font-size: 0.8em;
+	letter-spacing: 4px;
+	text-align: left;
+	display: block;
+	position: relative;
+	padding: 0.5rem 1rem;
+	font-weight: lighter;
+}
+
+
+
+/* contenedor contenido */
+
+.fc {
+	width: 50vw;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: calc(15vh + 10px);
+	margin-bottom: 20vh;
+	
+}
+
+        /* header and footer should be full width */
+		header {
+		height: 15vh;
+			top: 20px;
+		}
+
+.headerback {
+	background-image: url("logotipo2.svg");
+	position: absolute;
+	background-repeat: no-repeat;
+background-size: 1400px;
+	width: 1400px;
+	height: calc(15vh + 20rem);
+	top: -20rem;
+	right: -30rem;
+	z-index: 0;
+
+}
+
+
+		footer {
+		height: 11vh;
+		background-color: teal;
+
+
+		}
+         
+		header,
+        footer {
+		box-shadow: 0 1px 20px #393939;
+  		box-sizing: border-box;
+  		width: 100vw;
+		padding: 0 0vw 0 0vw;
+		display: block;
+		bottom: 0;
+
+        }
+
+		.item {
+			position: relative;
+			font-family: arial;
+			font-weight: bolder;
+			color: #ffffff;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border: solid #545454 1px;
+			flex: none;
+			margin-bottom: 55px;
+			display: flex;
+			justify-content: left;
+			background: tomato;
+			padding: 0 0 0 3px;
+			font-size: 1.1em;
+			text-decoration: none;
+}
+
+.fc div {
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+
+
+	p.caption  {
+		width: 100%;
+		position: absolute;
+		top: 95%;
+		left: 0;
+		font-size: 0.7em;
+		font-weight: lighter;
+		letter-spacing: 0.2em;
+		background-color: white;
+		color: black;
+		line-height: 1;
+}
+
+/* responsive */
+
+
+
+
+
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+
+	
+}
+
+
+/* MOBILE */
+
+
+@media screen and (min-width: 320px){
+	
+body  {
+     background: url("cables_3_mobile.jpg");
+	background-repeat: repeat-y;
+     background-size: contain;
+		animation: animatedBackground 300s linear infinite;
+}
+	
+	.patternbox {
+	animation: animatedBackground 60s linear infinite;
+}
+
+	
+/* header desplegable */
+	
+	.overlay {
+  width: 100vw;
+		right: 0;
+}
+
+	
+	.overlay .closebtn {
+		position: relative;
+  font-size: 40px;
+  top: 0;
+	margin-left: calc((100%) - (2rem));
+  }
+	
+	
+	.overlay-content h1 {
+	top: calc((-30vh) + (-2em));
+}
+	
+	.overlay-content a{
+		width: 80vw;
+		position: relative;
+		top: -28vh;
+	}
+	
+		.overlay-content .about {
+	font-size: 0.7em;
+			width: calc(100% - 5vw);
+}
+	
+	.overlay-content img {
+		position: relative;
+		top: -30vh;
+	width: 70vw;
+	
+}
+	
+/* fin de header desplegable */
+	
+	
+	
+	.header a{
+	width: calc(100% - 7rem);
+	text-decoration: none;
+	color: white;
+	font-size: 0.8em;
+		
+}
+	
+		.headerback {
+			position: absolute;
+	height: calc(15vh + 20.5rem);
+	top: -20.5rem;
+	left: 16rem;
+	}
+	
+	
+	.bot {
+	padding: 0.5rem 1rem 1rem 0;
+		color: white;
+	
+}
+	
+	.top {
+    width: 100vw;
+	padding-left: 10px;
+}
+	
+	span {
+	width: 1em;
+}
+	
+	.logo {
+	padding-bottom: 13px;
+	padding-left: 3rem;
+	}
+	
+	
+	.logo-icon svg{
+		color: white;
+		width: 53px;
+		margin-top: -0.5rem;
+		margin-left: 0.3rem;
+}
+	
+	
+	.item {
+		width: calc((100% - 0px) / 1);
+		height: 11em;
+}
+	
+	.item:first-child {
+			margin-top: 5vh;
+	}
+	
+	.footer {
+		width: 100vw;
+		padding-left: 0rem;
+		padding-right: 1rem;
+		}
+	
+	.footer h1 {
+	font-size: .5rem;
+	width: calc(100% - 6.6rem);
+
+}
+	
+	.itembot {
+		width: 50%;
+	}
+	
+	/** modal **/
+
+.modal-contenido{
+  background-color:white;
+  width:90vw;
+  height: 100vh;
+  padding: 10px 10px;
+  margin: auto;
+  position: relative;
+  top: 1vh;
+  overflow: scroll;
+}
+.modal-contenido a {
+	font-size: 70px;
+	font-family: Helvetica;
+	text-decoration: none;
+	color: #ffc20e;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+  overflow-y: scroll;
+}
+
+#miModal:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal2:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal3:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal4:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal5:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal6:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal7:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal8:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal9:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal10:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal11:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal12:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal13:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal14:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal15:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#miModal16:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+	
+	#miModal17:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+	
+	#miModal18:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+	
+	
+	#miModal19:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+	
+		#miModal20:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+	
+	
+		#miModal21:target{
+  z-index: 9999;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+	
+	@media (orientation: landscape) {
+		
+		.patternbox {
+	animation: animatedBackground 20s linear infinite;
+}
+		
+		.fc {
+			width: 75vw;
+		}
+		
+	.item {
+		width: calc((100% - 55px) / 3);
+		padding-bottom: 5.5em
+}
+	.top {
+    width: 85vw;
+}
+	.footer {
+	padding-left: 3.8rem;
+	padding-right: 3.8rem;
+		}
+		
+}
+
+}
+
+/* TABLET */
+
+
+@media screen and (min-width: 768px){
+	
+
+	.item {
+		width: calc((100% - 55px) / 2);
+}
+
+}
+
+
+/* DESKTOP SMALL */
+
+
+@media screen and (min-width: 1024px){
+	.item {
+		width: calc((100% - 110px) / 3);
+}
+
+}
+
+
+/* DESKTOP BIG */
+
+
+@media screen and (min-width: 1068px){
+	
+	body {
+			background-image: url("cables_3_desktop.jpg");
+		
+	}
+	
+	
+	.patternbox {
+	animation: animatedBackground 20s linear infinite;
+}
+	
+	/* header desplegable */
+	
+	.overlay {
+  width: 50vw;
+		right: auto;
+}
+	
+
+	.overlay .closebtn {
+		position: relative;
+  font-size: 40px;
+  top: calc(100% - 98vh);
+	margin-left: calc((100%) - (1.5rem));
+
+  }
+
+	
+	
+	.overlay-content h1 {
+	top: -30vh;
+}
+	
+	.overlay-content a{
+		position: relative;
+		top: -22vh;
+		width: 45vw;
+	}
+	
+	.overlay-content .about {
+	font-size: 0.9em;
+}
+	
+	.overlay-content img {
+	position: relative;
+	top: -15vh;
+	width: 400px;
+	line-height: 150px;
+	padding: 0.5rem 1rem;
+	
+}
+	
+	/* fin de header desplegable */
+	
+	
+		.logo-icon svg{
+}
+	
+	.header a{
+		width: calc(100% - 6.6rem);
+	font-size: 1em;
+	}
+	
+.headerback {
+	left: 65rem;
+	z-index: 0;
+
+}
+	
+	.bot {
+	color: #ffc20e;
+	}
+	
+		span {
+	width: 0.2em;
+}
+	
+		.logo {
+	padding-bottom: 7px;
+	padding-left: 5rem;
+	}
+	
+	
+	.top {
+	margin: auto;
+    width: 50vw;
+	justify-content:space-between;
+
+}
+	
+	
+	.fc {
+		width: 50vw;
+	}
+	.item {
+		width: calc((100% - 110px) / 4);
+		height: 4em;
+}
+		.item:first-child {
+			margin-top: 0;
+	}
+	
+	.foot {
+		width: 50vw;
+	}
+	
+	.footer h1 {
+		font-size: 0.8rem;
+		width: calc(100% - 6.5rem);
+		padding-left: 0.5rem;
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+/* imagenes linkeadas de contenido */
+
+				#item1  {
+			background-image: url(bluetooth-btn.jpg) ;
+			background-size: cover;
+}
+		
+				#item2  {
+			background-image: url(conan_color.jpg) ;
+			background-size: cover;
+}
+		
+				#item3  {
+			background-image: url(santasfail_color.jpg) ;	
+			background-size: cover;
+}
+		
+				#item4  {
+			background-image: url(jaque_color.jpg) ;
+			background-size: cover;
+}
+		
+				#item5  {
+			background-image: url(logos_color.jpg) ;
+			background-size: cover;
+}
+		
+				#item6  {
+			background-image: url(moleskine_color.jpg) ;
+			background-size: cover;					
+}
+				#item7  {
+			background-image: url(toy_color.jpg) ;
+			background-size: cover;
+}
+		
+				#item8  {
+			background-image: url(prisma_color.jpg) ;
+			background-size: cover;
+}
+		
+				#item9  {
+			background-image: url(fautor_color.jpg) ;
+			background-size: cover;
+}
+		
+				#item10  {
+			background-image: url(taiko-color.jpg) ;
+			background-size: cover;
+					
+}
+		
+				#item11  {
+			background-image: url(mlcentral-color.jpg) ;
+			background-size: cover;
+}
+		
+				#item12  {
+			background-image: url(kiddos-color.jpg) ;
+			background-size: cover;
+	
+}
+
+				#item13  {
+			background-image: url(guia-color.jpg) ;
+			background-size: cover;
+	
+}
+
+				#item14  {
+			background-image: url(topl-color.jpg) ;
+			background-size: cover;
+	
+}
+
+				#item15  {
+			background-image: url(poster-color.jpg) ;
+			background-size: cover;
+	
+}
+
+				#item16  {
+			background-image: url(1000xm4-color.jpg) ;
+			background-size: cover;
+	
+}
+
+
+				#item17  {
+			background-image: url(caudio-color.jpg) ;
+			background-size: cover;
+	
+}
+
+
+				#item18  {
+			background-image: url(rrss-color.jpg) ;
+			background-size: cover;
+	
+}
+
+
+				#item19  {
+			background-image: url(lacentral-color.jpg) ;
+			background-size: cover;
+	
+}
+
+				#item20  {
+			background-image: url(mike-color.jpg) ;
+			background-size: cover;
+	
+}
+
+				#item21  {
+			background-image: url(ilustracion-color.jpg) ;
+			background-size: cover;
+	
+}
+
+
+
+/* footer */
+
+.footer {
+	margin-top: 100px;
+	background: rgba(0, 128, 128, 1);
+	position: fixed;
+
+}
+
+
+.foot {
+	margin: auto;
+	display: flex;
+	flex-flow: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 0;
+	}
+
+.itembot {
+		width: 50%;
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+		color: white;
+}
+
+
+
+.footer h1 {
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	letter-spacing: 3px;
+	text-align: left;
+	font-weight: lighter;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+}
+
+
+.foot:last-child {
+	text-decoration: none;
+	
+}
+
+#linkedin {
+		background-image: url("linkedin.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+}
+
+#behance {
+		background-image: url(be.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+}
+
+.footer h1 strong {
+	color:#ffc20e;
+}
+
+
