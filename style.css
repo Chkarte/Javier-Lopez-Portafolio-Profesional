@@ -469,6 +469,11 @@ body  {
   overflow-y: scroll;
 }
 
+.slider-container img {
+    max-width: 100%;
+    height: auto;
+}
+
 #miModal:target{
   z-index: 9999;
   opacity: 1;
