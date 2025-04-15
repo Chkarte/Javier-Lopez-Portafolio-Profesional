@@ -619,6 +619,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal25:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -931,6 +937,12 @@ body  {
 
 				#item24  {
 			background-image: url(corner_paris_eltrebol-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item25  {
+			background-image: url(trasera_parisparque-color.jpg) ;
 			background-size: cover;
 
 }
