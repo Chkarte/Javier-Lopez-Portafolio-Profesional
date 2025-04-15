@@ -602,6 +602,11 @@ body  {
   pointer-events: auto;
 }
 
+#miModal22:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -898,6 +903,12 @@ body  {
 			background-image: url(ilustracion-color.jpg) ;
 			background-size: cover;
 	
+}
+
+				#item22  {
+			background-image: url(penji-color.jpg) ;
+			background-size: cover;
+
 }
 
 
