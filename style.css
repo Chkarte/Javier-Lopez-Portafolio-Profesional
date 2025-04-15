@@ -613,6 +613,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal24:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -917,9 +923,15 @@ body  {
 
 }
 
-#item23  {
-	background-image: url(pilar_palc-color.jpg) ;
-	background-size: cover;
+				#item23  {
+			background-image: url(pilar_palc-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item24  {
+			background-image: url(corner_paris_eltrebol-color.jpg) ;
+			background-size: cover;
 
 }
 
