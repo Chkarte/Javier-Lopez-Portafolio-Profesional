@@ -607,6 +607,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal23:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -911,6 +917,11 @@ body  {
 
 }
 
+#item23  {
+	background-image: url(pilar_palc-color.jpg) ;
+	background-size: cover;
+
+}
 
 
 /* footer */
