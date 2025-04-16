@@ -380,7 +380,7 @@ body  {
 			position: absolute;
 	height: calc(15vh + 20.5rem);
 	top: -20.5rem;
-	left: 16rem;
+	left: 18rem;
 	}
 	
 	
@@ -467,6 +467,11 @@ body  {
   pointer-events: none;
   transition: all 1s;
   overflow-y: scroll;
+}
+
+.slider-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 #miModal:target{
@@ -597,6 +602,53 @@ body  {
   pointer-events: auto;
 }
 
+#miModal22:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal23:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal24:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal25:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal26:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal27:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal28:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
+
+  #miModal29:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -895,7 +947,53 @@ body  {
 	
 }
 
+				#item22  {
+			background-image: url(penji-color.jpg) ;
+			background-size: cover;
 
+}
+
+				#item23  {
+			background-image: url(pilar_palc-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item24  {
+			background-image: url(corner_paris_eltrebol-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item25  {
+			background-image: url(trasera_parisparque-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item26  {
+			background-image: url(pilar_ssvina-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item27  {
+			background-image: url(ultxplod_sscostanera-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item28  {
+			background-image: url(mesa_pariscostanera-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item29  {
+			background-image: url(sskennedy-color.jpg) ;
+			background-size: cover;
+
+}
 
 /* footer */
 
