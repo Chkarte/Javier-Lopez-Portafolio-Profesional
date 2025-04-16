@@ -232,7 +232,7 @@ background-size: 1400px;
 	width: 1400px;
 	height: calc(15vh + 20rem);
 	top: -20rem;
-	right: -60rem;
+	right: -30rem;
 	z-index: 0;
 
 }
@@ -380,7 +380,7 @@ body  {
 			position: absolute;
 	height: calc(15vh + 20.5rem);
 	top: -20.5rem;
-	left: 16rem;
+	left: 36rem;
 	}
 	
 	
