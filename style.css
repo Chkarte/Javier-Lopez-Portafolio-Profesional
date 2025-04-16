@@ -631,6 +631,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal27:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -959,6 +965,11 @@ body  {
 
 }
 
+				#item27  {
+			background-image: url(pilar_ssvina-color.jpg) ;
+			background-size: cover;
+
+}
 
 /* footer */
 
