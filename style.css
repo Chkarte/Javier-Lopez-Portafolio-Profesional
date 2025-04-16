@@ -637,6 +637,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal28:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -966,6 +972,12 @@ body  {
 }
 
 				#item27  {
+			background-image: url(ultxplod_sscostanera-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item28  {
 			background-image: url(ultxplod_sscostanera-color.jpg) ;
 			background-size: cover;
 
