@@ -643,6 +643,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal29:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -979,6 +985,12 @@ body  {
 
 				#item28  {
 			background-image: url(mesa_pariscostanera-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item28  {
+			background-image: url(sskennedy-color.jpg) ;
 			background-size: cover;
 
 }
