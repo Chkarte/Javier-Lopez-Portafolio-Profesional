@@ -625,6 +625,12 @@ body  {
 	opacity: 1;
 	pointer-events: auto;
   }
+
+  #miModal26:target{
+	z-index: 9999;
+	opacity: 1;
+	pointer-events: auto;
+  }
 	
 	@media (orientation: landscape) {
 		
@@ -943,6 +949,12 @@ body  {
 
 				#item25  {
 			background-image: url(trasera_parisparque-color.jpg) ;
+			background-size: cover;
+
+}
+
+				#item26  {
+			background-image: url(pilar_ssvina-color.jpg) ;
 			background-size: cover;
 
 }
