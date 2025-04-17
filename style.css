@@ -718,43 +718,38 @@ body  {
 	/* header desplegable */
 	
 	.overlay {
-  width: 50vw;
-		right: auto;
-}
-	
+        width: 100vw;
+    }
 
-	.overlay .closebtn {
-		position: relative;
-  font-size: 40px;
-  top: calc(100% - 98vh);
-	margin-left: calc((100%) - (1.5rem));
+    .overlay .closebtn {
+        position: relative;
+        font-size: 40px;
+        top: calc(100% - 98vh);
+        margin-left: calc(100% - 1.5rem);
+    }
 
-  }
+    .overlay-content h1 {
+        top: -30vh;
+    }
 
-	
-	
-	.overlay-content h1 {
-	top: -30vh;
-}
-	
-	.overlay-content a{
-		position: relative;
-		top: -22vh;
-		width: 45vw;
-	}
-	
-	.overlay-content .about {
-	font-size: 0.9em;
-}
-	
-	.overlay-content img {
-	position: relative;
-	top: -15vh;
-	width: 400px;
-	line-height: 150px;
-	padding: 0.5rem 1rem;
-	
-}
+    .overlay-content a {
+        position: relative;
+        top: -22vh;
+        width: 45vw;
+    }
+
+    .overlay-content .about {
+        font-size: 0.9em;
+    }
+
+    .overlay-content img {
+        position: relative;
+        top: -15vh;
+        width: 400px;
+        line-height: 150px;
+        padding: 0.5rem 1rem;
+    }
+
 	
 	/* fin de header desplegable */
 	
@@ -816,11 +811,40 @@ body  {
 		padding-left: 0.5rem;
 	}
 	
-	
+
 	
 }
 
+/* RESPONSIVE GENERAL */
+@media screen and (min-width: 768px) and (max-width: 1067px) {
+    .item {
+        width: calc((100% - 55px) / 2);
+    }
+}
 
+@media screen and (orientation: landscape) {
+    .patternbox {
+        animation: animatedBackground 20s linear infinite;
+    }
+
+    .fc {
+        width: 75vw;
+    }
+
+    .item {
+        width: calc((100% - 55px) / 3);
+        padding-bottom: 5.5em;
+    }
+
+    .top {
+        width: 85vw;
+    }
+
+    .footer {
+        padding-left: 3.8rem;
+        padding-right: 3.8rem;
+    }
+}
 
 
 
