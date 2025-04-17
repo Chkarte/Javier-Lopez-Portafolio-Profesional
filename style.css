@@ -844,6 +844,150 @@ body  {
         padding-left: 3.8rem;
         padding-right: 3.8rem;
     }
+
+	#miModal:target{
+		
+	  }
+	  
+	  #miModal2:target{
+		
+	  }
+	  
+	  #miModal3:target{
+		
+	  }
+	  
+	  #miModal4:target{
+		
+	  }
+	  
+	  #miModal5:target{
+		
+	  }
+	  
+	  #miModal6:target{
+		
+	  }
+	  
+	  #miModal7:target{
+
+	  }
+	  
+	  #miModal8:target{
+		
+	  }
+	  
+	  #miModal9:target{
+		
+	  }
+	  
+	  #miModal10:target{
+		
+	  }
+	  
+	  #miModal11:target{
+		
+	  }
+	  
+	  #miModal12:target{
+		
+	  }
+	  
+	  #miModal13:target{
+		
+	  }
+	  
+	  #miModal14:target{
+		
+	  }
+	  
+	  #miModal15:target{
+		
+	  }
+	  
+	  #miModal16:target{
+		
+	  }
+		  
+		  #miModal17:target{
+			
+	  }
+		  
+		  #miModal18:target{
+			
+	  }
+		  
+		  
+		  #miModal19:target{
+			
+	  }
+		  
+		#miModal20:target{
+		
+	  }
+		  
+		  
+		#miModal21:target{
+		
+	  }
+	  
+		#miModal22:target{
+		
+		}
+	  
+		#miModal23:target{
+			
+		}
+	  
+		#miModal24:target{
+			
+		}
+	  
+		#miModal25:target{
+			
+		}
+	  
+		#miModal26:target{
+			
+		}
+	  
+		#miModal27:target{
+			
+		}
+	  
+		#miModal28:target{
+			
+		}
+	  
+		#miModal29:target{
+			
+		}
+
+		.slider-container {
+			position: relative;
+			height: 300px; /* Altura fija del contenedor */
+		}
+		
+
+		.slider-nav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 10%;
+			position: absolute;
+			top: 50vh;
+		}
+
+		.s.slider-nav slider-nav-next {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 10%;
+			position: absolute;
+			top: 50vh;
+		}
+
+
 }
 
 
