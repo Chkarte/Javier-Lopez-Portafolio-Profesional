@@ -25,8 +25,8 @@
 /* Versión móvil horizontal */
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .float {
-        bottom: 15vh !important;
-        right: 2vw !important;
+        bottom: 45vh !important;
+        right: 25vw !important;
     }
 }
 
