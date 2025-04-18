@@ -54,3 +54,44 @@
         right: 5.3vw ;
     }
 }
+
+@supports (position: fixed) {
+    .float {
+        position: fixed;
+    }
+}
+
+/* Versión móvil horizontal */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .float {
+        background-color: red !important; /* Prueba visual */
+        bottom: 40vh !important;
+        right: 50vw !important;
+    }
+}
+
+.float.mobile-horizontal {
+    bottom: 40vh !important;
+    right: 50vw !important;
+    background-color: red !important; /* Prueba visual */
+}
+
+.float.mobile-vertical {
+    bottom: 10vh !important;
+    right: 4.1vw !important;
+}
+
+.float.tablet-horizontal {
+    bottom: 10vh !important;
+    right: 5vw !important;
+}
+
+.float.tablet-vertical {
+    bottom: 7vh !important;
+    right: 8vw !important;
+}
+
+.float.desktop {
+    bottom: 9vh !important;
+    right: 5.3vw !important;
+}
