@@ -27,8 +27,8 @@
 /* Versión tablet vertical */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .float {
-        bottom: 10vh !important;
-        right: 4vw !important;
+        bottom: 7vh !important;
+        right: 7vw !important;
     }
 }
 
