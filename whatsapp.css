@@ -28,7 +28,7 @@
 /* Tablet horizontal */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .float {
-        bottom: 130px; /* Ajusta la posición en horizontal */
+        bottom: 30px; /* Ajusta la posición en horizontal */
         right: 30px;
         background-color: blue; /* Prueba visual */
     }

@@ -23,8 +23,8 @@ function adjustWhatsAppButton() {
   const floatButton = document.querySelector('.float');
 
   if (!floatButton) {
-      console.log('El botón .float no existe en el DOM.');
-      return;
+    console.log('El botón .float no existe en el DOM.');
+    return;
   }
 
   const width = window.innerWidth;
@@ -34,27 +34,36 @@ function adjustWhatsAppButton() {
 
   // Móvil horizontal
   if (width <= 767 && isLandscape) {
-      console.log('Móvil horizontal');
-      floatButton.style.bottom = '120px';
-      floatButton.style.right = '20px';
-      floatButton.style.backgroundColor = 'red'; // Prueba visual
+    console.log('Móvil horizontal');
+    floatButton.style.setProperty('bottom', '120px', 'important');
+    floatButton.style.setProperty('right', '20px', 'important');
+    floatButton.style.setProperty('background-color', 'red', 'important'); // Prueba visual
   }
   // Tablet horizontal
   else if (width >= 768 && width <= 1024 && isLandscape) {
-      console.log('Tablet horizontal');
-      floatButton.style.bottom = '30px';
-      floatButton.style.right = '30px';
-      floatButton.style.backgroundColor = 'blue'; // Prueba visual
+    console.log('Tablet horizontal');
+    floatButton.style.setProperty('bottom', '30px', 'important');
+    floatButton.style.setProperty('right', '30px', 'important');
+    floatButton.style.setProperty('background-color', 'blue', 'important'); // Prueba visual
   }
   // Otros casos
   else {
-      console.log('Otras resoluciones');
-      floatButton.style.bottom = '10px';
-      floatButton.style.right = '10px';
-      floatButton.style.backgroundColor = '#ffc20e'; // Color original
+    console.log('Otras resoluciones');
+    floatButton.style.setProperty('bottom', '10px', 'important');
+    floatButton.style.setProperty('right', '10px', 'important');
+    floatButton.style.setProperty('background-color', '#ffc20e', 'important'); // Color original
   }
 }
 
 // Ejecuta la función al cargar la página y al cambiar el tamaño de la ventana
 window.addEventListener('load', adjustWhatsAppButton);
 window.addEventListener('resize', adjustWhatsAppButton);
+
+const observer = new MutationObserver(() => {
+  adjustWhatsAppButton();
+});
+
+const floatButton = document.querySelector('.float');
+if (floatButton) {
+  observer.observe(floatButton, { attributes: true, attributeFilter: ['style'] });
+}
