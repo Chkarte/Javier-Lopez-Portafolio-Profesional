@@ -10,6 +10,8 @@ body {
 	background-attachment:fixed;
 	font-family: arial;
 	width: 100vw;
+	max-width: 1200px; /* Ajusta este valor al ancho máximo de tu diseño 
+    box-sizing: border-box; /* Asegura que el padding y el borde no afecten el ancho total */
 		}
 
 
@@ -681,7 +683,9 @@ body  {
 		padding-bottom: 5.5em;
 		height: 5em;
 }
-
+	.top {
+    width: 85vw;
+}
 		
 }
 }
