@@ -722,7 +722,7 @@ body  {
 	
 	}
 	.footer {
-        height: 8vh; /* Reduce la altura del footer */
+        height: 7vh; /* Reduce la altura del footer */
         padding-top: 0.5rem; /* Ajusta el padding superior */
         padding-bottom: 0.5rem; /* Ajusta el padding inferior */
     }
@@ -863,7 +863,7 @@ body  {
 	}
 	
 	.footer {
-		height: 12vh;
+		height: 11vh;
 		width: 100vw;
 		padding-left: 0rem;
 		padding-right: 1rem;
