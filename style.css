@@ -678,6 +678,7 @@ body  {
         padding: 1rem; /* Añade espacio interno para evitar que el contenido se corte */
         text-align: center; /* Centra el contenido horizontalmente */
         margin-top: 1rem; /* Añade un margen superior para separar el footer del contenido */
+        bottom: 0; /* Asegura que el footer esté al final */
     }
 
     .foot {
