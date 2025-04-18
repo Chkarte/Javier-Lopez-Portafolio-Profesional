@@ -18,7 +18,7 @@
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .float {
 		background-color: red !important; /* Prueba visual */
-        bottom: 45px !important;
+        bottom: 4vh !important;
         right: 10vw !important;
     }
 }
@@ -26,7 +26,7 @@
 /* Versión móvil vertical */
 @media screen and (max-width: 767px) and (orientation: portrait) {
     .float {
-        bottom: 85px !important;
+        bottom: 10vh !important;
         right: 4.1vw !important;
     }
 }
