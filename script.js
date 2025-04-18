@@ -30,7 +30,7 @@ function adjustWhatsAppButton() {
   }
   // Móvil vertical
   else if (width <= 767) {
-      floatButton.style.bottom = '10vh';
+      floatButton.style.bottom = '80vh';
       floatButton.style.right = '4.1vw';
   }
   // Tablet horizontal
