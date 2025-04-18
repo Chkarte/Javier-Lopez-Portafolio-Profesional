@@ -698,6 +698,8 @@ body  {
     }
 
     #linkedin, #behance {
+        width: 30px; /* Ajusta el tamaño de los íconos */
+        height: 30px;
         background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
         background-position: center;
         background-repeat: no-repeat;
