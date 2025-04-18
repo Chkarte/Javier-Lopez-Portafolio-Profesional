@@ -50,8 +50,8 @@ right:2vw;
 
 @media (orientation: landscape) {
 	.float {
-		right:3vw;
-		bottom:12vh;
+		right:5vw;
+		bottom:14vh;
 		
 	}
 }
