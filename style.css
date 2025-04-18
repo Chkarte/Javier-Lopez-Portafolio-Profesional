@@ -672,21 +672,38 @@ body  {
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
-	.footer {
-        height: 8vh; /* Reduce la altura del footer */
-        padding-top: 0.5rem; /* Ajusta el padding superior */
-        padding-bottom: 0.5rem; /* Ajusta el padding inferior */
+    .footer {
+        position: relative; /* Cambia de fixed a relative para evitar que se corte */
+        height: 8vh; /* Permite que el footer se ajuste automáticamente al contenido */
+        padding: 1rem; /* Añade espacio interno para evitar que el contenido se corte */
+        text-align: center; /* Centra el contenido horizontalmente */
+        margin-top: 1rem; /* Añade un margen superior para separar el footer del contenido */
+        bottom: 0; /* Asegura que el footer esté al final */
+    }
+
+    .foot {
+        display: flex; /* Activa Flexbox */
+        flex-direction: column; /* Organiza los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 0.5rem; /* Añade espacio entre los elementos */
     }
 
     .footer h1 {
         font-size: 0.8rem; /* Ajusta el tamaño del texto */
-        padding-top: 0.5rem; /* Reduce el espacio superior */
-        padding-bottom: 0.5rem; /* Reduce el espacio inferior */
+        line-height: 1.4; /* Mejora la legibilidad */
+        margin: 0; /* Elimina márgenes adicionales */
     }
 
-    .foot {
-        align-items: center; /* Centra los elementos verticalmente */
-        justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    .footer p {
+        margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    #linkedin, #behance {
+        width: 30px; /* Ajusta el tamaño de los íconos */
+        height: 30px;
+        background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
+        background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
