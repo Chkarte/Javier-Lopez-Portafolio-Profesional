@@ -35,23 +35,79 @@ function adjustWhatsAppButton() {
   // Móvil horizontal
   if (width <= 767 && isLandscape) {
     console.log('Móvil horizontal');
-    floatButton.style.setProperty('bottom', '220px', 'important');
-    floatButton.style.setProperty('right', '20px', 'important');
-    floatButton.style.setProperty('background-color', 'red', 'important'); // Prueba visual
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '50vw';
+    floatButton.style.backgroundColor = 'red'; // Prueba visual
+  }
+  // Móvil vertical
+  else if (width <= 767) {
+    console.log('Móvil vertical');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '4.1vw';
   }
   // Tablet horizontal
   else if (width >= 768 && width <= 1024 && isLandscape) {
     console.log('Tablet horizontal');
-    floatButton.style.setProperty('bottom', '30px', 'important');
-    floatButton.style.setProperty('right', '30px', 'important');
-    floatButton.style.setProperty('background-color', 'blue', 'important'); // Prueba visual
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '5vw';
   }
-  // Otros casos
-  else {
-    console.log('Otras resoluciones');
-    floatButton.style.setProperty('bottom', '10px', 'important');
-    floatButton.style.setProperty('right', '10px', 'important');
-    floatButton.style.setProperty('background-color', '#ffc20e', 'important'); // Color original
+  // Tablet vertical
+  else if (width >= 768 && width <= 1024) {
+    console.log('Tablet vertical');
+    floatButton.style.bottom = '7vh';
+    floatButton.style.right = '8vw';
+  }
+  // Desktop
+  else if (width >= 1025) {
+    console.log('Desktop');
+    floatButton.style.bottom = '9vh';
+    floatButton.style.right = '5.3vw';
+  }
+}
+
+function adjustWhatsAppButton() {
+  const floatButton = document.querySelector('.float');
+
+  if (!floatButton) {
+    console.log('El botón .float no existe en el DOM.');
+    return;
+  }
+
+  const width = window.innerWidth;
+  const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+
+  console.log(`Ancho: ${width}, Landscape: ${isLandscape}`);
+
+  // Móvil horizontal
+  if (width <= 767 && isLandscape) {
+    console.log('Móvil horizontal');
+    floatButton.style.bottom = '40vh';
+    floatButton.style.right = '50vw';
+    floatButton.style.backgroundColor = 'red'; // Prueba visual
+  }
+  // Móvil vertical
+  else if (width <= 767) {
+    console.log('Móvil vertical');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '4.1vw';
+  }
+  // Tablet horizontal
+  else if (width >= 768 && width <= 1024 && isLandscape) {
+    console.log('Tablet horizontal');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '5vw';
+  }
+  // Tablet vertical
+  else if (width >= 768 && width <= 1024) {
+    console.log('Tablet vertical');
+    floatButton.style.bottom = '7vh';
+    floatButton.style.right = '8vw';
+  }
+  // Desktop
+  else if (width >= 1025) {
+    console.log('Desktop');
+    floatButton.style.bottom = '9vh';
+    floatButton.style.right = '5.3vw';
   }
 }
 
@@ -59,13 +115,4 @@ function adjustWhatsAppButton() {
 window.addEventListener('load', adjustWhatsAppButton);
 window.addEventListener('resize', adjustWhatsAppButton);
 
-const observer = new MutationObserver(() => {
-  adjustWhatsAppButton();
-});
 
-const floatButton = document.querySelector('.float');
-if (floatButton) {
-  observer.observe(floatButton, { attributes: true, attributeFilter: ['style'] });
-}
-
-console.log('Ejecutando adjustWhatsAppButton');

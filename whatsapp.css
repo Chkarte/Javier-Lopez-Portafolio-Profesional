@@ -16,21 +16,5 @@
     margin-top: 16px;
 }
 
-/* Móvil horizontal */
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    .float {
-        bottom: 220px !important; /* Ajusta la posición en horizontal */
-        right: 20px !important;
-        background-color: red; /* Prueba visual */
-    }
-}
 
-/* Tablet horizontal */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    .float {
-        bottom: 30px; /* Ajusta la posición en horizontal */
-        right: 30px;
-        background-color: blue; /* Prueba visual */
-    }
-}
 
