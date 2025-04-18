@@ -653,7 +653,7 @@ body  {
 	@media (orientation: landscape) {
 
 		.footer {
-			height: 20vh; /* Aumenta la altura del footer */
+			height: 12vh; /* Aumenta la altura del footer */
 		}
 		
 		
