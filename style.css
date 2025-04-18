@@ -686,6 +686,27 @@ body  {
 		width: calc((100% - 55px) / 2);
 }
 
+.item:first-child {
+	margin-top: 0 !important; /* Elimina cualquier margen superior */
+	padding-top: 0 !important; /* Elimina cualquier padding superior */
+}
+
+}
+
+@media screen and (max-width: 767px) {
+    .item {
+        width: 100%; /* Asegura que cada ítem ocupe todo el ancho disponible */
+        margin-top: 0 !important; /* Elimina márgenes superiores */
+        padding-top: 0 !important; /* Elimina paddings superiores */
+    }
+
+    .fc {
+        display: flex; /* Activa Flexbox */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+        gap: 10px; /* Añade un pequeño espacio entre los elementos */
+    }
 }
 
 
@@ -715,43 +736,45 @@ body  {
 	animation: animatedBackground 20s linear infinite;
 }
 	
-	/* header desplegable */
+/* header desplegable */
 	
-	.overlay {
-        width: 100vw;
-    }
-
-    .overlay .closebtn {
-        position: relative;
-        font-size: 40px;
-        top: calc(100% - 98vh);
-        margin-left: calc(100% - 1.5rem);
-    }
-
-    .overlay-content h1 {
-        top: -30vh;
-    }
-
-    .overlay-content a {
-        position: relative;
-        top: -22vh;
-        width: 45vw;
-    }
-
-    .overlay-content .about {
-        font-size: 0.9em;
-    }
-
-    .overlay-content img {
-        position: relative;
-        top: -15vh;
-        width: 400px;
-        line-height: 150px;
-        padding: 0.5rem 1rem;
-    }
-
-	
-	/* fin de header desplegable */
+.overlay {
+	width: 100vw;
+		  right: 0;
+  }
+  
+	  
+	  .overlay .closebtn {
+		  position: relative;
+	font-size: 40px;
+	top: -1.5vh;
+	  margin-left: calc((100%) - (6.1rem));
+	}
+	  
+	  
+	  .overlay-content h1 {
+	  top: calc((-30vh) + (-2em));
+  }
+	  
+	  .overlay-content a{
+		  width: 80vw;
+		  position: relative;
+		  top: -28vh;
+	  }
+	  
+		  .overlay-content .about {
+	  font-size: 0.7em;
+			  width: calc(100% - 5vw);
+  }
+	  
+	  .overlay-content img {
+		  position: relative;
+		  top: -40vh;
+	  width: 60vw;
+	  
+  }
+	  
+  /* fin de header desplegable */
 	
 	
 		.logo-icon svg{
