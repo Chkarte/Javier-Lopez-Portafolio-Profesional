@@ -681,9 +681,7 @@ body  {
 		padding-bottom: 5.5em;
 		height: 5em;
 }
-	.top {
-    width: 85vw;
-}
+
 		
 }
 }
@@ -831,6 +829,7 @@ body  {
 	width: 2400px;
 	height: calc(15vh + 20rem);
 	top: -20rem;
+
 	z-index: 0;
 
 }
