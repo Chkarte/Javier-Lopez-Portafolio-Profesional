@@ -1,57 +1,49 @@
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#ffc20e;
-	color:teal;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-
-@media screen and (min-width: 320px){
-	
 .float {
-	right:4.1vw;
-	bottom:85px;
-	
-}
-	
-		@media (orientation: landscape) {
-		.float {
-right:2vw;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #ffc20e;
+    color: teal;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
 }
 
+.my-float {
+    margin-top: 16px;
 }
-	
-	@media screen and (min-width: 1068px){
-	.float {
-	right:5.3vw !important;
-	bottom:9vh !important;
-	
-}
-		
-	}
-	
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+/* Versión tablet horizontal */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .float {
-		bottom: 10vh !important;
-		right: 5vw !important;
+        bottom: 10vh !important; /* Ajusta la distancia desde la parte inferior */
+        right: 5vw !important; /* Ajusta la distancia desde la parte derecha */
     }
 }
 
-@media (orientation: landscape) {
-	.float {
-		right:4vw;
-		bottom:13vh;
-		
-	}
+/* Versión tablet vertical */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .float {
+        bottom: 10vh !important;
+        right: 5vw !important;
+    }
+}
+
+/* Versión desktop */
+@media screen and (min-width: 1068px) {
+    .float {
+        bottom: 9vh !important;
+        right: 5.3vw !important;
+    }
+}
+
+/* Versión móvil */
+@media screen and (max-width: 767px) {
+    .float {
+        bottom: 85px !important;
+        right: 4.1vw !important;
+    }
 }
