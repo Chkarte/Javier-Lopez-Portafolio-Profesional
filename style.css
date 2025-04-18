@@ -667,6 +667,7 @@ body  {
 	.top {
     width: 85vw;
 }
+
 	.footer {
 	padding-left: 3.8rem;
 	padding-right: 3.8rem;
@@ -857,18 +858,20 @@ body  {
 	}
 	
 	.foot {
-		width: 50vw;
+		width: 100vw;
+		display: flex;
+		flex-direction: column; /* Organiza los elementos en una columna */
+		align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+		padding-left: 2rem; /* Añade espacio desde el borde izquierdo */
+	}
 	}
 	
 	.footer h1 {
 		font-size: 0.8rem;
-		width: calc(100% - 6.5rem);
+		width: 79vw;
 		padding-left: 0.5rem;
 	}
-	
 
-	
-}
 
 /* RESPONSIVE GENERAL */
 @media screen and (min-width: 768px) and (max-width: 1067px) {

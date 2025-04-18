@@ -34,7 +34,7 @@ right:2vw;
 	@media screen and (min-width: 1068px){
 	.float {
 	right:5vw;
-	bottom:5vh;
+	bottom:9vh;
 	
 }
 		
@@ -43,7 +43,7 @@ right:2vw;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .float {
-        bottom: 12vh; /* Ajusta la distancia desde la parte inferior */
+        bottom: 11vh; /* Ajusta la distancia desde la parte inferior */
         right: 20px; /* Mantén la distancia desde la derecha */
     }
 }
