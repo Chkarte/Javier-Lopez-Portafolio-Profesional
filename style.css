@@ -863,6 +863,7 @@ body  {
 	}
 	
 	.footer {
+		height: 12vh;
 		width: 100vw;
 		padding-left: 0rem;
 		padding-right: 1rem;
