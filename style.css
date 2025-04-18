@@ -208,6 +208,18 @@ h3 {
 
 /* contenedor contenido */
 
+main {
+    width: 80%; /* Ajusta el ancho del contenido principal */
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 20px; /* Añade espacio interno */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    display: flex; /* Activa Flexbox para organizar los elementos */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: 20px; /* Añade espacio entre los elementos */
+}
+
 .fc {
 	width: 50vw;
 	margin: auto;
@@ -841,9 +853,6 @@ body  {
   /* fin de header desplegable */
 	
 	
-		.logo-icon svg{
-}
-	
 	.header a{
 		width: calc(100% - 6.6rem);
 	font-size: 1em;
@@ -875,9 +884,15 @@ body  {
 	justify-content:space-between;
 
 }
+
+main {
+	width: 75%; /* Reduce el ancho en pantallas grandes */
+	gap: 30px; /* Aumenta el espacio entre los elementos */
+}
 	
 	
 .fc, .slider-container {
+	
     display: flex; /* Activa Flexbox */
     flex-wrap: wrap; /* Permite que los elementos se envuelvan */
     justify-content: flex-start; /* Alinea los elementos al inicio horizontalmente */
@@ -890,6 +905,10 @@ body  {
 		height: 15em;
 		box-sizing: border-box; /* Asegura que el padding y el borde no afecten el tamaño total */
 	}
+
+	.item .caption {
+        margin-top: 18px; /* Añade un margen superior de 1px */
+    }
 		.item:first-child {
 			margin-top: 0;
 	}
