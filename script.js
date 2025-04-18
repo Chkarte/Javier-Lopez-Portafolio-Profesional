@@ -27,10 +27,11 @@ function adjustWhatsAppButton() {
     return;
   }
 
-  const width = window.innerWidth;
-  const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+  const width = window.innerWidth || screen.width;
+  const height = window.innerHeight || screen.height;
+  const isLandscape = width > height;
 
-  console.log(`Ancho: ${width}, Landscape: ${isLandscape}`);
+  console.log(`Ancho: ${width}, Alto: ${height}, Landscape: ${isLandscape}`);
 
   // Móvil horizontal
   if (width <= 767 && isLandscape) {
@@ -72,16 +73,28 @@ function adjustWhatsAppButton() {
     return;
   }
 
-  const width = window.innerWidth;
-  const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+  const width = window.innerWidth || screen.width;
+  const height = window.innerHeight || screen.height;
+  const isLandscape = width > height;
 
-  console.log(`Ancho: ${width}, Landscape: ${isLandscape}`);
+  const userAgent = navigator.userAgent.toLowerCase();
+  const isSamsung = userAgent.includes('samsung');
+
+  console.log(`Ancho: ${width}, Alto: ${height}, Landscape: ${isLandscape}, Samsung: ${isSamsung}`);
+
+   // Ajustes específicos para Samsung
+   if (isSamsung) {
+    console.log('Ajustes específicos para Samsung');
+    floatButton.style.bottom = '15vh';
+    floatButton.style.right = '6vw';
+    return;
+  }
 
   // Móvil horizontal
   if (width <= 767 && isLandscape) {
     console.log('Móvil horizontal');
     floatButton.style.bottom = '10vh';
-    floatButton.style.right = '4vw';
+    floatButton.style.right = '5vw';
   }
   // Móvil vertical
   else if (width <= 767) {
@@ -108,6 +121,10 @@ function adjustWhatsAppButton() {
     floatButton.style.right = '5.3vw';
   }
 }
+
+const orientation = window.orientation || (width > height ? 90 : 0);
+const isLandscape = orientation === 90 || orientation === -90;
+
 
 // Ejecuta la función al cargar la página y al cambiar el tamaño de la ventana
 window.addEventListener('load', adjustWhatsAppButton);
