@@ -35,7 +35,7 @@ function adjustWhatsAppButton() {
   // Móvil horizontal
   if (width <= 767 && isLandscape) {
       console.log('Móvil horizontal');
-      floatButton.style.bottom = '20px';
+      floatButton.style.bottom = '120px';
       floatButton.style.right = '20px';
       floatButton.style.backgroundColor = 'red'; // Prueba visual
   }
