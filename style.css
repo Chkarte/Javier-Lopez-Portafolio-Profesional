@@ -669,15 +669,6 @@ body  {
 }
 		
 }
-
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    .footer {
-        height: 90vh; /* Aumenta la altura del footer */
-        padding: 1rem; /* Añade espacio interno */
-        text-align: center; /* Centra el contenido horizontalmente */
-    }
-
-}
 }
 
 
