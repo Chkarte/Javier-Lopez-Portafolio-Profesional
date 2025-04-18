@@ -704,6 +704,10 @@ body  {
         background-position: center;
         background-repeat: no-repeat;
     }
+
+	.itembot {
+		width: 50%;
+	}
 }
 
  
