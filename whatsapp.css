@@ -40,10 +40,19 @@
     }
 }
 
-/* Versión móvil */
+/* Versión móvil vertical*/
 @media screen and (max-width: 767px) {
     .float {
         bottom: 85px !important;
         right: 4.1vw !important;
     }
+}
+
+/* Versión móvil horizontal*/
+@media (orientation: landscape) {
+	.float {
+		right:4vw;
+		bottom:13vh;
+		
+	}
 }
