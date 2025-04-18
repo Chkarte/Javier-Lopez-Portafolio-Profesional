@@ -671,39 +671,6 @@ body  {
 
 }
 
-@media screen and (max-width: 767px) and (orientation: landscape) {
-    .footer {
-        height: 20vh; /* Aumenta la altura del footer */
-        padding: 1rem; /* Añade espacio interno */
-        text-align: center; /* Centra el contenido horizontalmente */
-    }
-
-    .foot {
-        display: flex; /* Activa Flexbox */
-        flex-direction: column; /* Organiza los elementos en una columna */
-        align-items: center; /* Centra los elementos horizontalmente */
-        gap: 1rem; /* Añade espacio entre los elementos */
-    }
-
-    .footer h1 {
-        font-size: 1rem; /* Ajusta el tamaño del texto */
-        line-height: 1.5; /* Mejora la legibilidad */
-        margin: 0; /* Elimina márgenes adicionales */
-    }
-
-    .footer p {
-        margin: 0; /* Elimina márgenes adicionales */
-    }
-
-    #linkedin, #behance {
-        width: 40px; /* Ajusta el tamaño de los íconos */
-        height: 40px;
-        background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-}
-
 
 
 /* TABLET */
@@ -1229,3 +1196,38 @@ body  {
 }
 
 
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .footer {
+        position: relative; /* Asegura que el footer no esté fijo */
+        height: auto; /* Permite que el footer se ajuste automáticamente al contenido */
+        padding: 2rem 1rem; /* Añade espacio interno */
+        text-align: center; /* Centra el contenido horizontalmente */
+        background: rgba(0, 128, 128, 1); /* Asegura que el fondo sea visible */
+        margin-top: 1rem; /* Añade un margen superior */
+    }
+
+    .foot {
+        display: flex; /* Activa Flexbox */
+        flex-direction: column; /* Organiza los elementos en una columna */
+        align-items: center; /* Centra los elementos horizontalmente */
+        gap: 1rem; /* Añade espacio entre los elementos */
+    }
+
+    .footer h1 {
+        font-size: 1rem; /* Ajusta el tamaño del texto */
+        line-height: 1.5; /* Mejora la legibilidad */
+        margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    .footer p {
+        margin: 0; /* Elimina márgenes adicionales */
+    }
+
+    #linkedin, #behance {
+        width: 40px; /* Ajusta el tamaño de los íconos */
+        height: 40px;
+        background-size: contain; /* Asegura que la imagen se ajuste al contenedor */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
