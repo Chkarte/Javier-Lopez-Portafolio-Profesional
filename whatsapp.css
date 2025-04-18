@@ -70,28 +70,3 @@
     }
 }
 
-.float.mobile-horizontal {
-    bottom: 40vh !important;
-    right: 50vw !important;
-    background-color: red !important; /* Prueba visual */
-}
-
-.float.mobile-vertical {
-    bottom: 10vh !important;
-    right: 4.1vw !important;
-}
-
-.float.tablet-horizontal {
-    bottom: 10vh !important;
-    right: 5vw !important;
-}
-
-.float.tablet-vertical {
-    bottom: 7vh !important;
-    right: 8vw !important;
-}
-
-.float.desktop {
-    bottom: 9vh !important;
-    right: 5.3vw !important;
-}

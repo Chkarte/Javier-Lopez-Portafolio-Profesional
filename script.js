@@ -44,7 +44,7 @@ function adjustWhatsAppButton() {
       floatButton.style.right = '8vw';
   }
   // Desktop
-  else if (width >= 1068) {
+  else if (width >= 1025) {
       floatButton.style.bottom = '9vh';
       floatButton.style.right = '5.3vw';
   }
@@ -54,29 +54,4 @@ function adjustWhatsAppButton() {
 window.addEventListener('load', adjustWhatsAppButton);
 window.addEventListener('resize', adjustWhatsAppButton);
 
-function updateWhatsAppClass() {
-  const floatButton = document.querySelector('.float');
-
-  if (!floatButton) return;
-
-  const width = window.innerWidth;
-  const orientation = window.orientation;
-
-  floatButton.className = 'float'; // Reinicia las clases
-
-  if (width <= 767 && (orientation === 90 || orientation === -90)) {
-      floatButton.classList.add('mobile-horizontal');
-  } else if (width <= 767) {
-      floatButton.classList.add('mobile-vertical');
-  } else if (width >= 768 && width <= 1024 && (orientation === 90 || orientation === -90)) {
-      floatButton.classList.add('tablet-horizontal');
-  } else if (width >= 768 && width <= 1024) {
-      floatButton.classList.add('tablet-vertical');
-  } else if (width >= 1068) {
-      floatButton.classList.add('desktop');
-  }
-}
-
-window.addEventListener('load', updateWhatsAppClass);
-window.addEventListener('resize', updateWhatsAppClass);
 
