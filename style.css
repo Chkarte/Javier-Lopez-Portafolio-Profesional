@@ -667,7 +667,8 @@ body  {
 		
 	.item {
 		width: calc((100% - 55px) / 3);
-		padding-bottom: 5.5em
+		padding-bottom: 5.5em;
+		height: 15em;
 }
 	.top {
     width: 85vw;
