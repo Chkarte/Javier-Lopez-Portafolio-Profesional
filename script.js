@@ -35,7 +35,7 @@ function adjustWhatsAppButton() {
   // Móvil horizontal
   if (width <= 767 && isLandscape) {
     console.log('Móvil horizontal');
-    floatButton.style.setProperty('bottom', '120px', 'important');
+    floatButton.style.setProperty('bottom', '220px', 'important');
     floatButton.style.setProperty('right', '20px', 'important');
     floatButton.style.setProperty('background-color', 'red', 'important'); // Prueba visual
   }
@@ -67,3 +67,5 @@ const floatButton = document.querySelector('.float');
 if (floatButton) {
   observer.observe(floatButton, { attributes: true, attributeFilter: ['style'] });
 }
+
+console.log('Ejecutando adjustWhatsAppButton');

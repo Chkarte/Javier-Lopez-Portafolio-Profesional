@@ -19,8 +19,8 @@
 /* Móvil horizontal */
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .float {
-        bottom: 20px; /* Ajusta la posición en horizontal */
-        right: 20px;
+        bottom: 220px !important; /* Ajusta la posición en horizontal */
+        right: 20px !important;
         background-color: red; /* Prueba visual */
     }
 }
