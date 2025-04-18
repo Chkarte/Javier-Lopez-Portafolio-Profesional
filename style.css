@@ -654,8 +654,6 @@ body  {
 
 		.footer {
 			height: 20vh; /* Aumenta la altura del footer */
-			padding: 1rem; /* Añade espacio interno */
-			text-align: center; /* Centra el contenido horizontalmente */
 		}
 		
 		
