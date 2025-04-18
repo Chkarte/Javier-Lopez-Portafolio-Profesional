@@ -14,6 +14,11 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  adjustWhatsAppButton();
+  window.addEventListener('resize', adjustWhatsAppButton);
+});
+
 function adjustWhatsAppButton() {
   const floatButton = document.querySelector('.float');
 
