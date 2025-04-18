@@ -1,5 +1,5 @@
 .float {
-    position: relative;
+    position: fixed; /* Fija el botón en la pantalla */
     width: 60px;
     height: 60px;
     background-color: #ffc20e;
@@ -7,11 +7,30 @@
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    z-index: 100;
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+    bottom: 10px; /* Posición inicial */
+    right: 10px; /* Posición inicial */
 }
 
 .my-float {
     margin-top: 16px;
 }
 
+/* Móvil horizontal */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    .float {
+        bottom: 20px; /* Ajusta la posición en horizontal */
+        right: 20px;
+        background-color: red; /* Prueba visual */
+    }
+}
+
+/* Tablet horizontal */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .float {
+        bottom: 30px; /* Ajusta la posición en horizontal */
+        right: 30px;
+        background-color: blue; /* Prueba visual */
+    }
+}
 
