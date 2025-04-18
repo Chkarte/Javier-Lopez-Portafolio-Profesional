@@ -23,34 +23,12 @@
     }
 }
 
-/* Versión móvil vertical */
-@media screen and (max-width: 767px) and (orientation: portrait) {
-    .float {
-        bottom: 85px !important;
-        right: 4.1vw !important;
-    }
-}
+
 
 /* Versión tablet horizontal */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .float {
         bottom: 10vh !important;
         right: 5vw !important;
-    }
-}
-
-/* Versión tablet vertical */
-@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .float {
-        bottom: 7vh !important;
-        right: 8vw !important;
-    }
-}
-
-/* Versión desktop */
-@media screen and (min-width: 1068px) {
-    .float {
-        bottom: 9vh !important;
-        right: 5.3vw !important;
     }
 }
