@@ -718,8 +718,8 @@ body  {
 		background-size: 1400px;
 		width: 1400px;
 		height: calc(15vh + 20rem);
-		top: 0;
-		right: -10rem;
+		top: -20rem;
+		right: 0;
 		z-index: 0;
 	
 	}
