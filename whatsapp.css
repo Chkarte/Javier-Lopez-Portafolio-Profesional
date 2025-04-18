@@ -51,8 +51,8 @@
 /* Versión móvil horizontal*/
 @media (orientation: landscape) {
 	.float {
-		right:4vw;
-		bottom:13vh;
+		right:2vw;
+		bottom:15vh;
 		
 	}
 }
