@@ -707,20 +707,22 @@ body  {
         align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
         gap: 10px; /* Añade un pequeño espacio entre los elementos */
     }
-	@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 	.headerback {
 		background-image: url("logotipo2.svg");
 		position: absolute;
 		background-repeat: no-repeat;
-	background-size: 1400px;
+		background-size: 1400px;
 		width: 1400px;
 		height: calc(15vh + 20rem);
-		top: -20rem;
+		top: 0;
 		right: -10rem;
 		z-index: 0;
 	
 	}
-}
 }
 
 
