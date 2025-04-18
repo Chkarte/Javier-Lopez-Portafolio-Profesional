@@ -22,36 +22,92 @@ document.addEventListener('DOMContentLoaded', () => {
 function adjustWhatsAppButton() {
   const floatButton = document.querySelector('.float');
 
-  if (!floatButton) return;
+  if (!floatButton) {
+    console.log('El botón .float no existe en el DOM.');
+    return;
+  }
 
   const width = window.innerWidth;
-  const orientation = window.orientation;
+  const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+
+  console.log(`Ancho: ${width}, Landscape: ${isLandscape}`);
 
   // Móvil horizontal
-  if (width <= 767 && (orientation === 90 || orientation === -90)) {
-      floatButton.style.bottom = '80vh';
-      floatButton.style.right = '50vw';
-      floatButton.style.backgroundColor = 'red'; // Prueba visual
+  if (width <= 767 && isLandscape) {
+    console.log('Móvil horizontal');
+    floatButton.style.bottom = '40vh';
+    floatButton.style.right = '50vw';
+    floatButton.style.backgroundColor = 'red'; // Prueba visual
   }
   // Móvil vertical
   else if (width <= 767) {
-      floatButton.style.bottom = '10vh';
-      floatButton.style.right = '4.1vw';
+    console.log('Móvil vertical');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '4.1vw';
   }
   // Tablet horizontal
-  else if (width >= 768 && width <= 1024 && (orientation === 90 || orientation === -90)) {
-      floatButton.style.bottom = '10vh';
-      floatButton.style.right = '5vw';
+  else if (width >= 768 && width <= 1024 && isLandscape) {
+    console.log('Tablet horizontal');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '5vw';
   }
   // Tablet vertical
   else if (width >= 768 && width <= 1024) {
-      floatButton.style.bottom = '7vh';
-      floatButton.style.right = '8vw';
+    console.log('Tablet vertical');
+    floatButton.style.bottom = '7vh';
+    floatButton.style.right = '8vw';
   }
   // Desktop
   else if (width >= 1025) {
-      floatButton.style.bottom = '9vh';
-      floatButton.style.right = '5.3vw';
+    console.log('Desktop');
+    floatButton.style.bottom = '9vh';
+    floatButton.style.right = '5.3vw';
+  }
+}
+
+function adjustWhatsAppButton() {
+  const floatButton = document.querySelector('.float');
+
+  if (!floatButton) {
+    console.log('El botón .float no existe en el DOM.');
+    return;
+  }
+
+  const width = window.innerWidth;
+  const isLandscape = window.matchMedia('(orientation: landscape)').matches;
+
+  console.log(`Ancho: ${width}, Landscape: ${isLandscape}`);
+
+  // Móvil horizontal
+  if (width <= 767 && isLandscape) {
+    console.log('Móvil horizontal');
+    floatButton.style.bottom = '40vh';
+    floatButton.style.right = '50vw';
+    floatButton.style.backgroundColor = 'red'; // Prueba visual
+  }
+  // Móvil vertical
+  else if (width <= 767) {
+    console.log('Móvil vertical');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '4.1vw';
+  }
+  // Tablet horizontal
+  else if (width >= 768 && width <= 1024 && isLandscape) {
+    console.log('Tablet horizontal');
+    floatButton.style.bottom = '10vh';
+    floatButton.style.right = '5vw';
+  }
+  // Tablet vertical
+  else if (width >= 768 && width <= 1024) {
+    console.log('Tablet vertical');
+    floatButton.style.bottom = '7vh';
+    floatButton.style.right = '8vw';
+  }
+  // Desktop
+  else if (width >= 1025) {
+    console.log('Desktop');
+    floatButton.style.bottom = '9vh';
+    floatButton.style.right = '5.3vw';
   }
 }
 
