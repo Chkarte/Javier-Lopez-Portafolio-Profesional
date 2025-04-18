@@ -5,7 +5,6 @@ body {
 	margin:0px;
 	padding: 0px;
 	background-color: teal;
-	background-image: url("cables_3_desktop.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment:fixed;
@@ -759,9 +758,11 @@ body  {
 @media screen and (min-width: 1068px){
 	
 	body {
-			background-image: url("cables_3_desktop.jpg");
+			background-image: url("cables_3_desktop-v.jpg");
 		
 	}
+
+	
 	
 	
 	.patternbox {
