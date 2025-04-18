@@ -19,8 +19,8 @@
 /* Versión tablet horizontal */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .float {
-        bottom: 10vh !important; /* Ajusta la distancia desde la parte inferior */
-        right: 5vw !important; /* Ajusta la distancia desde la parte derecha */
+        bottom: 50vh !important; /* Ajusta la distancia desde la parte inferior */
+        right: 20vw !important; /* Ajusta la distancia desde la parte derecha */
     }
 }
 
