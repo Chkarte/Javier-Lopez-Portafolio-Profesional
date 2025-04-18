@@ -668,9 +668,6 @@ body  {
 }
 		
 }
-
-}
-
 @media screen and (max-width: 767px) and (orientation: landscape) {
     .footer {
         height: auto; /* Permite que el footer se ajuste automáticamente al contenido */
@@ -703,6 +700,10 @@ body  {
         background-repeat: no-repeat;
     }
 }
+
+}
+
+
 
 /* TABLET */
 
