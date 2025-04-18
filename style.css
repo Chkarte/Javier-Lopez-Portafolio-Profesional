@@ -711,6 +711,24 @@ body  {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+	.header {
+        height: 10vh; /* Reduce la altura del header */
+        padding: 0; /* Elimina cualquier padding interno */
+        display: flex; /* Asegura que los elementos estén alineados correctamente */
+        align-items: center; /* Centra los elementos verticalmente */
+        justify-content: space-between; /* Distribuye los elementos horizontalmente */
+    }
+
+    .header a {
+        font-size: 0.9em; /* Ajusta el tamaño del texto o enlaces dentro del header */
+        padding: 0 1rem; /* Ajusta el espaciado interno de los enlaces */
+    }
+
+    .logo {
+        height: 8vh; /* Ajusta la altura del logo */
+        margin-left: 1rem; /* Ajusta el margen izquierdo del logo */
+    }
+
 	.headerback {
 		background-image: url("logotipo2.svg");
 		position: absolute;
