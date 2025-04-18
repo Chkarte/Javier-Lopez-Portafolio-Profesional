@@ -47,3 +47,10 @@ right:2vw;
         right: 4.9vh; /* Mantén la distancia desde la derecha */
     }
 }
+
+@media (orientation: landscape) {
+	.float {
+		right:5vw;
+		bottom:9vh;
+		
+	}
