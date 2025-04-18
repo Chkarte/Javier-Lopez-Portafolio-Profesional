@@ -46,13 +46,13 @@
         bottom: 85px !important;
         right: 4.1vw !important;
     }
-}
 
-/* Versión móvil horizontal*/
+	/* Versión móvil horizontal*/
 @media (orientation: landscape) {
 	.float {
 		right:2vw;
 		bottom:15vh;
 		
 	}
+}
 }
